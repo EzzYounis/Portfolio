@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" fill="none">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1f2316"/>
+      <stop offset="60%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="neonGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8ff3d"/>
+      <stop offset="100%" stop-color="#55e6a5"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(237, 237, 234, 0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="750" fill="url(#bgGlow)"/>
+  <rect width="600" height="750" fill="url(#grid)"/>
+
+  <!-- Halo rings -->
+  <circle cx="300" cy="300" r="180" stroke="rgba(200, 255, 61, 0.12)" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle cx="300" cy="300" r="230" stroke="rgba(237, 237, 234, 0.05)" stroke-width="1.5"/>
+
+  <!-- Engineer Silhouette / Abstract Tech Portrait -->
+  <g transform="translate(150, 140)">
+    <!-- Head -->
+    <path d="M150 70 C205 70 230 110 230 170 C230 230 195 260 150 260 C105 260 70 230 70 170 C70 110 95 70 150 70 Z" fill="#18191c" stroke="rgba(200, 255, 61, 0.4)" stroke-width="2"/>
+    <!-- Modern Tech Glasses / Visor -->
+    <rect x="95" y="145" width="110" height="28" rx="14" fill="#0b0b0c" stroke="url(#neonGrad)" stroke-width="2"/>
+    <line x1="105" y1="159" x2="195" y2="159" stroke="#c8ff3d" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 6"/>
+    <!-- Shoulders & Torso -->
+    <path d="M30 350 C30 270 90 265 120 265 L180 265 C210 265 270 270 270 350 L285 410 L15 410 Z" fill="#151619" stroke="rgba(237, 237, 234, 0.15)" stroke-width="2"/>
+    <!-- Core Accent Glow -->
+    <circle cx="150" cy="320" r="24" fill="#111113" stroke="url(#neonGrad)" stroke-width="2"/>
+    <path d="M150 310 V330 M140 320 H160" stroke="#c8ff3d" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Technical Overlay HUD Elements -->
+  <g font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b8b86">
+    <rect x="40" y="40" width="130" height="26" rx="6" fill="#161618" stroke="rgba(200, 255, 61, 0.2)"/>
+    <circle cx="54" cy="53" r="4" fill="#c8ff3d"/>
+    <text x="66" y="57" fill="#ededea" font-size="10">EY.ENGINEER_ID</text>
+
+    <!-- Specs Box -->
+    <rect x="40" y="590" width="520" height="110" rx="14" fill="#111113" stroke="rgba(237, 237, 234, 0.1)"/>
+    <text x="65" y="625" fill="#c8ff3d" font-weight="600" font-size="14">Ezzaldeen Younis</text>
+    <text x="65" y="648" fill="#8b8b86" font-size="12">M.S. Computer Engineering · Hacettepe University</text>
+    <text x="65" y="674" fill="#c2c2bc" font-size="11">STACK: React Native · Node.js · AWS · Docker · GPT-4o</text>
+
+    <!-- Top-right status -->
+    <rect x="430" y="40" width="130" height="26" rx="6" fill="#161618" stroke="rgba(237, 237, 234, 0.1)"/>
+    <text x="445" y="57" fill="#a3a39e" font-size="10">CGPA 3.71 / 4.00</text>
+  </g>
+</svg>

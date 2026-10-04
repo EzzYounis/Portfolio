@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="dashGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0e0e10"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8ff3d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c8ff3d" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#dashGrad)"/>
+
+  <!-- Left Sidebar -->
+  <rect width="240" height="750" fill="#0d0d0f" stroke="#1f1f22" stroke-width="1"/>
+  <circle cx="36" cy="40" r="14" fill="#c8ff3d"/>
+  <text x="31" y="45" font-family="'Syne', sans-serif" font-weight="bold" font-size="14" fill="#0b0b0c">A</text>
+  <text x="60" y="45" font-family="'Syne', sans-serif" font-weight="700" font-size="16" fill="#ededea">Admitra <tspan fill="#c8ff3d" font-size="12">Admin</tspan></text>
+
+  <!-- Nav Items -->
+  <g font-family="'Inter', sans-serif" font-size="13" fill="#8b8b86" transform="translate(20, 90)">
+    <rect x="0" y="0" width="200" height="38" rx="8" fill="#18181c"/>
+    <rect x="0" y="0" width="4" height="38" rx="2" fill="#c8ff3d"/>
+    <text x="35" y="24" fill="#c8ff3d" font-weight="600">Overview &amp; Metrics</text>
+
+    <text x="35" y="68">Student Applications</text>
+    <text x="35" y="108">Ado AI Counselor Logs</text>
+    <text x="35" y="148">Document Vault (S3)</text>
+    <text x="35" y="188">Program Matching</text>
+    <text x="35" y="228">System Health &amp; Redis</text>
+    <text x="35" y="268">Security &amp; JWT Roles</text>
+  </g>
+
+  <!-- System Health Tag in Sidebar -->
+  <g transform="translate(20, 640)">
+    <rect width="200" height="80" rx="10" fill="#141417" stroke="#252528" stroke-width="1"/>
+    <circle cx="20" cy="25" r="4" fill="#55e6a5"/>
+    <text x="32" y="29" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ededea">AWS Cluster: Active</text>
+    <text x="20" y="50" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">Redis Latency: <tspan fill="#c8ff3d">11.4ms</tspan></text>
+    <text x="20" y="66" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">Docker Containers: 6/6</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <g transform="translate(270, 30)">
+    <!-- Header -->
+    <text x="0" y="20" font-family="'Syne', sans-serif" font-weight="700" font-size="22" fill="#ededea">Admissions Platform Intelligence</text>
+    <text x="0" y="42" font-family="'Inter', sans-serif" font-size="13" fill="#8b8b86">Real-time cross-platform telemetry &amp; applicant throughput</text>
+
+    <!-- KPI Cards -->
+    <g transform="translate(0, 65)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="205" height="95" rx="10" fill="#161619" stroke="#222226"/>
+      <text x="16" y="28" font-family="'Inter', sans-serif" font-size="11" fill="#8b8b86" text-transform="uppercase">Total Applications</text>
+      <text x="16" y="64" font-family="'Syne', sans-serif" font-weight="700" font-size="28" fill="#ededea">4,829</text>
+      <text x="16" y="82" font-family="'JetBrains Mono', monospace" font-size="10" fill="#c8ff3d">↑ +24.8% this cycle</text>
+
+      <!-- Card 2 -->
+      <rect x="225" y="0" width="205" height="95" rx="10" fill="#161619" stroke="#222226"/>
+      <text x="241" y="28" font-family="'Inter', sans-serif" font-size="11" fill="#8b8b86" text-transform="uppercase">Ado AI Consultations</text>
+      <text x="241" y="64" font-family="'Syne', sans-serif" font-weight="700" font-size="28" fill="#c8ff3d">18,490</text>
+      <text x="241" y="82" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">GPT-4o avg latency 180ms</text>
+
+      <!-- Card 3 -->
+      <rect x="450" y="0" width="205" height="95" rx="10" fill="#161619" stroke="#222226"/>
+      <text x="466" y="28" font-family="'Inter', sans-serif" font-size="11" fill="#8b8b86" text-transform="uppercase">S3 Direct Uploads</text>
+      <text x="466" y="64" font-family="'Syne', sans-serif" font-weight="700" font-size="28" fill="#ededea">34.2 GB</text>
+      <text x="466" y="82" font-family="'JetBrains Mono', monospace" font-size="10" fill="#55e6a5">0 server bottlenecks</text>
+
+      <!-- Card 4 -->
+      <rect x="675" y="0" width="205" height="95" rx="10" fill="#161619" stroke="#222226"/>
+      <text x="691" y="28" font-family="'Inter', sans-serif" font-size="11" fill="#8b8b86" text-transform="uppercase">Acceptance Rate</text>
+      <text x="691" y="64" font-family="'Syne', sans-serif" font-weight="700" font-size="28" fill="#ededea">94.2%</text>
+      <text x="691" y="82" font-family="'JetBrains Mono', monospace" font-size="10" fill="#c8ff3d">Target match precision</text>
+    </g>
+
+    <!-- Main Chart Section -->
+    <g transform="translate(0, 185)">
+      <rect width="560" height="260" rx="12" fill="#141417" stroke="#202024"/>
+      <text x="20" y="32" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#ededea">Application Volume &amp; AI Recommendation Velocity</text>
+      <text x="20" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#8b8b86">Continuous 30-day pipeline telemetry</text>
+
+      <!-- Chart line and area -->
+      <path d="M 30 220 C 100 180 160 195 230 140 C 300 85 370 110 440 70 L 520 60 L 520 220 L 30 220 Z" fill="url(#chartGrad)"/>
+      <path d="M 30 220 C 100 180 160 195 230 140 C 300 85 370 110 440 70 L 520 60" fill="none" stroke="#c8ff3d" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- Dots on peak points -->
+      <circle cx="230" cy="140" r="4" fill="#0b0b0c" stroke="#c8ff3d" stroke-width="2"/>
+      <circle cx="440" cy="70" r="4" fill="#0b0b0c" stroke="#c8ff3d" stroke-width="2"/>
+      <circle cx="520" cy="60" r="5" fill="#c8ff3d"/>
+    </g>
+
+    <!-- Right Side: Recent Live Events -->
+    <g transform="translate(580, 185)">
+      <rect width="300" height="260" rx="12" fill="#141417" stroke="#202024"/>
+      <text x="20" y="32" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#ededea">Live Admissions Stream</text>
+
+      <!-- Item 1 -->
+      <g transform="translate(20, 60)">
+        <circle cx="6" cy="12" r="3" fill="#c8ff3d"/>
+        <text x="18" y="10" font-family="'Inter', sans-serif" font-size="12" fill="#ededea">Engineering M.S. Candidate</text>
+        <text x="18" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">Ado AI evaluated · Match 96%</text>
+      </g>
+      <!-- Item 2 -->
+      <g transform="translate(20, 105)">
+        <circle cx="6" cy="12" r="3" fill="#55e6a5"/>
+        <text x="18" y="10" font-family="'Inter', sans-serif" font-size="12" fill="#ededea">S3 Direct Upload Completed</text>
+        <text x="18" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">Transcript_certified.pdf (2.4MB)</text>
+      </g>
+      <!-- Item 3 -->
+      <g transform="translate(20, 150)">
+        <circle cx="6" cy="12" r="3" fill="#c8ff3d"/>
+        <text x="18" y="10" font-family="'Inter', sans-serif" font-size="12" fill="#ededea">Push Notification Dispatched</text>
+        <text x="18" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">Expo Notification Gateway · 42ms</text>
+      </g>
+      <!-- Item 4 -->
+      <g transform="translate(20, 195)">
+        <circle cx="6" cy="12" r="3" fill="#7582ff"/>
+        <text x="18" y="10" font-family="'Inter', sans-serif" font-size="12" fill="#ededea">Redis Cache Eviction Sync</text>
+        <text x="18" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8b8b86">99.8% cache hit ratio</text>
+      </g>
+    </g>
+
+    <!-- Bottom Data Table -->
+    <g transform="translate(0, 465)">
+      <rect width="880" height="200" rx="12" fill="#141417" stroke="#202024"/>
+      <text x="24" y="32" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#ededea">Student Application Pipeline</text>
+
+      <!-- Table Row 1 -->
+      <g transform="translate(24, 60)" font-family="'Inter', sans-serif" font-size="12">
+        <text x="0" y="14" fill="#8b8b86">APPLICANT</text>
+        <text x="200" y="14" fill="#8b8b86">TARGET DEGREE</text>
+        <text x="440" y="14" fill="#8b8b86">AI COUNSELOR STATUS</text>
+        <text x="680" y="14" fill="#8b8b86">CLOUD VAULT</text>
+      </g>
+      <line x1="24" y1="88" x2="856" y2="88" stroke="#1f1f23"/>
+
+      <!-- Table Row 2 -->
+      <g transform="translate(24, 105)" font-family="'Inter', sans-serif" font-size="13">
+        <text x="0" y="15" fill="#ededea" font-weight="500">Kaan Demir</text>
+        <text x="200" y="15" fill="#a3a39e">Computer Science M.S.</text>
+        <rect x="440" y="2" width="130" height="22" rx="4" fill="#1b2414"/>
+        <text x="450" y="17" fill="#c8ff3d" font-size="11">✓ Guided by Ado</text>
+        <text x="680" y="15" fill="#55e6a5" font-family="'JetBrains Mono', monospace" font-size="11">AWS S3 Presigned</text>
+      </g>
+      <!-- Table Row 3 -->
+      <g transform="translate(24, 145)" font-family="'Inter', sans-serif" font-size="13">
+        <text x="0" y="15" fill="#ededea" font-weight="500">Elena Rostova</text>
+        <text x="200" y="15" fill="#a3a39e">Software Engineering B.S.</text>
+        <rect x="440" y="2" width="130" height="22" rx="4" fill="#1b2414"/>
+        <text x="450" y="17" fill="#c8ff3d" font-size="11">✓ Scholarship Match</text>
+        <text x="680" y="15" fill="#55e6a5" font-family="'JetBrains Mono', monospace" font-size="11">AWS S3 Presigned</text>
+      </g>
+    </g>
+  </g>
+</svg>
